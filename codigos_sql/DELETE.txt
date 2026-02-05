@@ -1,0 +1,2 @@
+DELETE FROM emprestimos
+WHERE emp_id = 10008;

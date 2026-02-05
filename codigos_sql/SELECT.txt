@@ -1,0 +1,9 @@
+SELECT * FROM livro;
+
+SELECT * FROM usuario;
+
+SELECT * FROM autor;
+
+SELECT * FROM livro_autor;
+
+SELECT * FROM emprestimos;

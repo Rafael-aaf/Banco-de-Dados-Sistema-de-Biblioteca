@@ -1,0 +1,11 @@
+UPDATE usuario
+SET usu_id = 23392017
+WHERE usu_id = 3392017;
+
+UPDATE usuario
+SET usu_id = 23938460
+WHERE usu_id = 03938460;
+
+UPDATE livro
+SET liv_editora = "Penguin"
+WHERE liv_id = 12;

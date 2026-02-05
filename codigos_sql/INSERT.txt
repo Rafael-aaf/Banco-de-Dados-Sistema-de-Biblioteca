@@ -1,0 +1,65 @@
+INSERT INTO livro VALUES
+(1, 'When Marnie Was There', 1967, 'Harper Collins', 'Infantojuvenil'),
+(2, 'Orgulho e Preconceito', 2011, 'Martin Claret', 'Romance'),
+(3, 'Persuasão', 2011, 'Martin Claret', 'Romance'),
+(4, 'Emma', 2012, 'Martin Claret', 'Romance'),
+(5, 'A Vegetariana', 2018, 'Todavia', 'Ficção contemporânea'),
+(6, 'Atos Humanos', 2017, 'Todavia', 'Ficção contemporânea'),
+(7, 'Árvore de Diana', 2019, 'Relicário', 'Poesia'),
+(8, 'Os Trabalhos e as Noites', 2018, 'Relicário', 'Poesia'),
+(9, 'Extração da Pedra da Loucura', 2020, 'Relicário', 'Poesia'),
+(10, 'O Inferno Musical', 2021, 'Relicário', 'Poesia'),
+(11, 'Cartas a um Jovem Poeta', 2013, 'LPM', 'Cartas/Ensaio'),
+(12, 'Os Sofrimentos do Jovem Werther', 2014, 'Martin Claret', 'Romance'),
+(13, 'Klara e o Sol', 2021, 'Companhia das Letras', 'Ficção contemporânea'),
+(14, 'Não Me Abandone Jamais', 2017, 'Companhia das Letras', 'Ficção científica'),
+(15, 'Antologia Poética - Florbela Espanca', 2012, 'Martin Claret', 'Poesia'),
+(16, 'A Menina que Roubava Livros', 2013, 'Intrínseca', 'Ficção histórica');
+
+INSERT INTO usuario VALUES
+(03392017, 'Rafael'),
+(03938460, 'Anna'),
+(12290174, 'Diego'),
+(99417395, 'Mariana'),
+(34574638, 'Maria');
+
+INSERT INTO autor VALUES
+(1000, 'Joan G. Robinson', 'Britânica'),
+(1001, 'Jane Austen', 'Britânica'),
+(1002, 'Han Kang', 'Sul-coreana'),
+(1003, 'Alejandra Pizarnik', 'Argentina'),
+(1004, 'Rainer Maria Rilke', 'Austríaca'),
+(1005, 'Johann Wolfgang von Goethe', 'Alemã'),
+(1006, 'Kazuo Ishiguro', 'Britânica'),
+(1007, 'Florbela Espanca', 'Portuguesa'),
+(1008, 'Markus Zusak', 'Australiana');
+
+INSERT INTO emprestimos VALUES
+(10000, 23392017, 1,  '2025-01-10', '2025-01-20'),
+(10001, 23938460, 2,  '2025-01-12', '2025-01-25'),
+(10002, 12290174, 5, '2025-01-15', '2025-01-30'),
+(10003, 99417395, 7, '2025-01-18', '2025-02-02'),
+(10004, 34574638, 11,'2025-01-20', '2025-02-05'),
+(10005, 23392017, 13,'2025-01-22', '2025-02-06'),
+(10006, 23938460, 16,'2025-01-25', '2025-02-10'),
+(10007, 12290174, 4, '2025-01-28', '2025-02-12'),
+(10008, 99417395, 9, '2025-02-01', '2025-02-15'),
+(10009, 34574638, 14,'2025-02-03', '2025-02-18');
+
+INSERT INTO livro_autor (liv_id, aut_id) VALUES
+(1, 1000),
+(2, 1001),
+(3, 1001),
+(4, 1001),
+(5, 1002),
+(6, 1002),
+(7, 1003),
+(8, 1003),
+(9, 1003),
+(10, 1003),
+(11, 1004),
+(12, 1005),
+(13, 1006),
+(14, 1006),
+(15, 1007),
+(16, 1008);

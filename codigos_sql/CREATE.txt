@@ -1,0 +1,8 @@
+CREATE DATABASE sistema_biblioteca;
+USE sistema_biblioteca;
+
+CREATE TABLE livro (
+	liv_id INT PRIMARY KEY,
+    liv_nome VARCHAR(150),
+    liv_ano INT
+);
