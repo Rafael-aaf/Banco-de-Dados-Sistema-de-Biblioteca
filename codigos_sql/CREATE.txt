@@ -1,0 +1,42 @@
+CREATE DATABASE sistema_biblioteca;
+USE sistema_biblioteca;
+
+CREATE TABLE livro (
+	liv_id INT PRIMARY KEY,
+    liv_nome VARCHAR(150),
+    liv_ano INT,
+    liv_editora VARCHAR (50),
+    liv_categoria VARCHAR (50)
+);
+
+CREATE TABLE autor (
+	aut_id INT PRIMARY KEY,
+    aut_nome VARCHAR(100),
+    aut_nacionalidade VARCHAR (30)
+);
+
+CREATE TABLE livro_autor (
+	liv_id INT,
+    aut_id INT,
+    
+    PRIMARY KEY(liv_id, aut_id),
+    
+    FOREIGN KEY (liv_id) REFERENCES livro(liv_id),
+    FOREIGN KEY (aut_id) REFERENCES autor(aut_id)
+);
+
+CREATE TABLE usuario(
+	usu_id INT PRIMARY KEY,
+    usu_nome VARCHAR (100)
+);
+
+CREATE TABLE emprestimos(
+	emp_id INT PRIMARY KEY,
+    usu_id INT,
+    liv_id INT,
+    emp_data_emprestimo DATE,
+    emp_data_devolucao DATE,
+    
+    FOREIGN KEY (usu_id) REFERENCES usuario(usu_id),
+    FOREIGN KEY (liv_id) REFERENCES livro(liv_id)
+);
